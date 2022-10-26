@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Img1 from './img/1.gif'
-import Style from './css/style.css'
+import Style from './css/style'
 
 class App extends Component {
     render() {

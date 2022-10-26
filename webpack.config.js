@@ -40,7 +40,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
@@ -122,7 +122,11 @@ module.exports = {
                 "pathRewrite": { "^/data": "" }//如果接口本身没有/data需要通过pathRewrite来重写了地址
             }
         }
-    }
+    },
+    resolve: {
+        extensions: ['.jsx', '.less', '.js', '.css']
+    },
+
 
 
 }
