@@ -8,5 +8,17 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].main.js"
     },
-    mode: "development"
+    mode: "development",
+    devtool: "source-map",
+    module: {
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                }
+            }
+        ]
+    }
 }
