@@ -4,17 +4,19 @@ body {
     font-size: 14px;
     font-family: 微软雅黑;
     color: #fff;
+    background: url('./../img/2.jpg');
+
 }
 
 div#app {
-    background: #a0f;
+    background: #aaf;
     color: #fff;
     width: 400px;
     height: 400px;
 }
 
 div#app div {
-    background: #0fa;
+    background: #3fa;
     width: $value;
     height: $value;
 }
